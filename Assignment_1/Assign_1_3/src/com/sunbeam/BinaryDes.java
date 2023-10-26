@@ -1,0 +1,40 @@
+package com.sunbeam;
+
+import java.util.Scanner;
+
+public class BinaryDes {
+	
+	public static int binarySearch(int arr[],int key) {
+		int start=0;
+		int end=arr.length-1;
+		int mid=(end+start)/2;
+		int cnt=0;
+		
+		while(start<end) {
+			cnt++;
+			
+			if(arr[mid]==key) {
+				System.out.println("Element found at index : "+mid);
+				return cnt;
+			}
+			else if(arr[mid]>key) {
+				start=mid+1;
+				
+			}
+			else {
+				end=mid-1;
+			}
+			mid=(end+start)/2;
+		}
+		return  cnt;
+	}
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int arr[]= {17,15,16,13,11,9,5,2};System.out.println("Enter key : ");
+		int key=sc.nextInt();
+		int bs=binarySearch(arr, key);
+		System.out.println(bs);
+
+	}
+
+}

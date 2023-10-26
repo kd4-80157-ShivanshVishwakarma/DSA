@@ -1,0 +1,33 @@
+package com.sunbeam.dsa;
+
+public class MainTest {
+	public static int linearSearch(Employee arr[],String key) {
+		int cnt=0;
+		for(int i=0;i<arr.length;++i) {
+			cnt++;
+			if(arr[i].getName()==key) {
+//				System.out.println("Employee id is found at index : "+cnt);
+				System.out.println("Employee name is found at index : "+cnt);
+				break;
+			}
+			
+		}
+		return cnt;
+	}
+	public static void main(String[] args) {
+		Employee arr[]=new Employee[5];
+		arr[0]=new Employee(1,"Hit",500);
+		arr[1]=new Employee(3,"Wit",2000);
+		arr[2]=new Employee(8,"Fit",7000);
+		arr[3]=new Employee(9,"Kit",8000);
+		arr[4]=new Employee(19,"Lit",9000);
+		int com = linearSearch(arr,"Kit");
+//		int com = linearSearch(arr,9);
+//		System.out.println("Number of comparisions to find id : "+com);
+		
+		int com = binarySearch(arr,9);
+		
+
+	}
+
+}

@@ -1,0 +1,14 @@
+package com.sunbeam.dsa;
+
+public class Occurence {
+	
+	public static int occurence(int arr[]) {
+		
+	}
+	
+	public static void main(String[] args) {
+		int arr[]= {1, 2, 3, -1, 2, 1, 0, 4, -1, 7, 8};
+
+	}
+
+}

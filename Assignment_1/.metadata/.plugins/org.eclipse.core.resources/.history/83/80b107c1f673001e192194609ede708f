@@ -1,0 +1,12 @@
+package com.sunbeam.dsa;
+
+public class MainTest {
+
+	public static void main(String[] args) {
+		Employee arr[]=new Employee[5];
+		arr[0]=new Employee(1,"Hit",3000);
+		
+
+	}
+
+}
